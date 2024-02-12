@@ -20,7 +20,7 @@ INT WINAPI _tWinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPTSTR lpszCmdLine, i
 
 
    //1
-   /* int lenText = lstrlen(TEXT("Меня зовут Мария. Дата рождения 10.12.2004.Образование:неполное высшее,комп.науки."));
+    int lenText = lstrlen(TEXT("Меня зовут Мария. Дата рождения 10.12.2004.Образование:неполное высшее,комп.науки."));
     int nId = 3;
     int avgCharOnPage = lenText / nId;
     int id1 = MessageBox(0, TEXT("Меня зовут Мария."), TEXT("Первая страница резюме"), MB_OKCANCEL | MB_ICONINFORMATION);
@@ -47,13 +47,12 @@ INT WINAPI _tWinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPTSTR lpszCmdLine, i
     TCHAR avgCharOnPageWindow[50];
     wsprintf(avgCharOnPageWindow, TEXT("Среднее количество символов на странице: %d"), avgCharOnPage);
     MessageBox(0, TEXT("Последняя страница резюме"), avgCharOnPageWindow, MB_OK | MB_ICONINFORMATION);
-*/
+
 
 
     //2
-  
-
-    srand(time(NULL));
+ 
+   /* srand(time(NULL));
     int attempts = 0;
     int randNum = rand() % 100 + 1;
     int guessedNum;
@@ -81,8 +80,8 @@ INT WINAPI _tWinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPTSTR lpszCmdLine, i
             break;
         }
         if (result == IDOK) {
-            _stprintf_s(buffer, TEXT("%d"), result); 
-             guessedNum = _tstoi(buffer);
+          
+            guessedNum = _tstoi(buffer);
              MessageBox(0, TEXT("Ваше число было принято."), TEXT("Угадай число"), MB_ICONINFORMATION | MB_OK);
 
         }
@@ -109,6 +108,6 @@ INT WINAPI _tWinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPTSTR lpszCmdLine, i
     int choice = MessageBox(0, message, TEXT("Победа!"), MB_ICONQUESTION | MB_YESNO);
     if (choice == IDYES) {
         _tWinMain(hInst, hPrevInst, lpszCmdLine, nCmdShow);
-    }
+    }*/
 
 }
